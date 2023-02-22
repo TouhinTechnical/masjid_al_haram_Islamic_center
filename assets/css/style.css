@@ -103,6 +103,15 @@ a{
 .fw-bold{
     font-weight: 700;
 }
+.fs-18{
+    font-size: 18px;
+}
+.fs-19{
+    font-size: 19px;
+}
+.fs-21{
+    font-size: 21px;
+}
 .fs-30{
     font-size: 30px;
 }
@@ -112,22 +121,43 @@ a{
 .d-flex{
     display: flex;
 }
+.lh-26{
+    line-height: 26px;
+}
 .lh-30{
     line-height: 30px;
+}
+.lh-35{
+    line-height: 35px;
 }
 img{
     max-width: 100%;
 }
 /* margin */
+.ml-8{
+    margin-left: 8.33333333%;
+}
 .mt-30{
     margin-top: 30px;
+}
+.mb-10{
+    margin-bottom: 10px;
 }
 .mb-20{
     margin-bottom: 20px;
 }
+.mb-30{
+    margin-bottom: 30px;
+}
 /* padding */
 .ptb-90{
     padding: 90px 0;
+}
+.ptb-120{
+    padding: 120px 0;
+}
+.pb-70{
+    padding-bottom: 70px;
 }
 /* background colors */
 .bg-Polar{
@@ -148,6 +178,18 @@ img{
 }
 .text-doveGray{
     color: #666;
+}
+.text-Cerulean{
+    color: #00b3d6;
+}
+.text-Boulder{
+    color: #777777;
+}
+.text-Astronaut{
+    color: #242f6c;
+}
+.text-MineShaft{
+    color: #333;
 }
 /* button */
 .themeBtn{
@@ -172,6 +214,14 @@ img{
 }
 .themeBtn:hover{
     background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgb(0, 222, 216)), to(rgb(0, 167, 213)));
+}
+/* title */
+.headingTittle {
+    font-family: 'Conv_Now-Bold';
+    font-weight: 700;
+    font-size: 40px;
+    color: #242f6c;
+    line-height: 60px;
 }
 /* -----------------
     Header Part Start
@@ -384,4 +434,128 @@ img{
 }
 /* -----------------
     Slider Part End
+--------------------*/
+
+/* -----------------
+    About Part Start
+--------------------*/
+.aboutArea .row{
+    align-items: center;
+    justify-content: center;
+}
+.aboutShortTittle {
+    display: inline-block;
+    text-transform: capitalize;
+}
+.videoHolder {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    box-shadow: 0px 2px 12.75px 2.25px rgb(51 100 219 / 15%);
+    display: block;
+    margin: 0 25px;
+}
+.videoText {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+.videoText a{
+    border-bottom: 2px solid #08b3c0;
+}
+/* -----------------
+    About Part End
+--------------------*/
+
+/* -----------------
+    Prayer Part Start
+--------------------*/
+.prayerTimerSection {
+    background: -webkit-linear-gradient(1deg, rgb(234, 248, 254) 0%, rgb(237, 254, 244) 100%);
+    padding: 70px;
+    position: relative;
+    z-index: 1;
+}
+.timerTextShortTittle {
+    font-family: 'Conv_Now-Bold';
+    font-size: 45px;
+    line-height: 50px;
+    text-transform: capitalize;
+}
+.timerTextDate {
+    text-decoration: underline;
+}
+.prayerTimerList ul li {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+.prayerTimerList ul li:nth-child(1){
+    background: -webkit-linear-gradient(1deg, rgb(14, 230, 241, .25) 0%, rgb(12, 159, 254, .25) 100%);
+    background: -moz-linear-gradient(1deg, rgb(14, 230, 241, .25) 0%, rgb(12, 159, 254, .25) 100%);
+    position: relative;
+    right: -70px;
+    color: #02a0a5;
+}
+.prayerTimerList ul li:nth-child(2){
+    background: -webkit-linear-gradient(173deg, rgb(255, 173, 111, .25) 0%, rgb(255, 125, 144, .25) 100%);
+    background: -moz-linear-gradient(173deg, rgb(255, 173, 111, .25) 0%, rgb(255, 125, 144, .25) 100%);
+    color: #df8f73;
+}
+.prayerTimerList ul li:nth-child(3){
+    background: -moz-linear-gradient(179deg, rgb(216, 205, 255, .25) 0%, rgb(109, 100, 255, .25) 100%);
+    background: -webkit-linear-gradient(179deg, rgb(216, 205, 255, .25) 0%, rgb(109, 100, 255, .25) 100%);
+    background: -ms-linear-gradient(179deg, rgb(216, 205, 255, .25) 0%, rgb(109, 100, 255, .25) 100%);
+    position: relative;
+    right: -70px;
+    color: #6d64ff;
+}
+.prayerTimerList ul li:nth-child(4){
+    background: -moz-linear-gradient(179deg, rgb(164, 228, 150, .25) 0%, rgb(23, 207, 137, .25) 100%);
+    background: -webkit-linear-gradient(179deg, rgb(164, 228, 150, .25) 0%, rgb(23, 207, 137, .25) 100%);
+    background: -ms-linear-gradient(179deg, rgb(164, 228, 150, .25) 0%, rgb(23, 207, 137, .25) 100%);
+    color: #44a884;
+}
+.prayerTimerList ul li:nth-child(5){
+    background: -moz-linear-gradient(179deg, rgb(254, 208, 237, .25) 0%, rgb(255, 116, 181, .25) 100%);
+    background: -webkit-linear-gradient(179deg, rgb(254, 208, 237, .25) 0%, rgb(255, 116, 181, .25) 100%);
+    background: -ms-linear-gradient(179deg, rgb(254, 208, 237, .25) 0%, rgb(255, 116, 181, .25) 100%);
+    color: #ee76ba;
+    position: relative;
+    right: -70px;
+}
+.prayerTimerList ul li:nth-child(6){
+    background: -moz-linear-gradient(1deg, rgb(14, 230, 241, .25) 0%, rgb(12, 159, 254, .25) 100%);
+    background: -webkit-linear-gradient(1deg, rgb(14, 230, 241, .25) 0%, rgb(12, 159, 254, .25) 100%);
+    background: -ms-linear-gradient(1deg, rgb(14, 230, 241, .25) 0%, rgb(12, 159, 254, .25) 100%);
+    color: #419fa2;
+    margin-bottom: 0;
+}
+.timerShape1 {
+    position: absolute;
+    left: -50px;
+    bottom: -50px;
+    z-index: -1;
+}
+.timerShape2 {
+    position: absolute;
+    left: 18%;
+    bottom: 50px;
+    z-index: -1;
+}
+.timerShape3 {
+    position: absolute;
+    left: -16%;
+    bottom: 0px;
+    z-index: -1;
+}
+/* -----------------
+    Prayer Part End
 --------------------*/
