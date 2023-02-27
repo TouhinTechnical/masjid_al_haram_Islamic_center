@@ -209,6 +209,21 @@ img{
 .text-MineShaft{
     color: #333;
 }
+.text-RobinEggBlue{
+    color: #00d0d8;
+}
+.text-VividTangerine{
+    color: #ff8b86;
+}
+.text-CornflowerBlue{
+    color: #8168f6;
+}
+.text-TickleMePink{
+    color: #fe89c4;
+}
+.text-Shamrock{
+    color: #41cf85;
+}
 /* button */
 .themeBtn{
     background-color: transparent;
@@ -644,4 +659,55 @@ img{
 }
 /* -----------------
     Service Part End
+--------------------*/
+
+/* -----------------
+    Pilars Part Start
+--------------------*/
+.pilarsArea{
+    padding: 80px;
+}
+.pilarsAreaMainContent {
+    overflow: hidden;
+    padding: 20px 0;
+}
+.pilarsAreaContentGrid {
+    float: left;
+    width: 20%;
+}
+.pilarsImg {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    background: rgb(248, 254, 254);
+    text-align: center;
+    margin: 0 auto;
+    line-height: 280px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 10%);
+}
+.pilarsImg img {
+    transform: scale(1);
+    transition: all .3s;
+    width: 100%;
+}
+.pilarsImg:hover img{
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.pilarsText h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Conv_Now-Bold';
+}
+/* -----------------
+    Pilars Part End
 --------------------*/
