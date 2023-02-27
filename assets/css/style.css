@@ -87,12 +87,19 @@ body{
     flex: 0 0 66.67%;
     max-width: 66.67%;
 }
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 /* ulitity */
 ul{
     list-style: none;
 }
 a{
     text-decoration: none;
+}
+.tAlign-center{
+    text-align: center;
 }
 .of-hidden{
     overflow: hidden;
@@ -114,6 +121,9 @@ a{
 }
 .fs-21{
     font-size: 21px;
+}
+.fs-25{
+    font-size: 25px;
 }
 .fs-30{
     font-size: 30px;
@@ -146,6 +156,9 @@ img{
 .ml-9{
     margin-left: 9px;
 }
+.mr-15{
+    margin-right: 15px;
+}
 .mt-20{
     margin-top: 20px;
 }
@@ -158,11 +171,17 @@ img{
 .mb-10{
     margin-bottom: 10px;
 }
+.mb-15{
+    margin-bottom: 15px;
+}
 .mb-20{
     margin-bottom: 20px;
 }
 .mb-30{
     margin-bottom: 30px;
+}
+.mb-70{
+    margin-bottom: 70px;
 }
 /* padding */
 .ptb-90{
@@ -183,6 +202,9 @@ img{
 }
 .bg-white{
     background: #fff;
+}
+.bg-Whisper{
+    background: #f9f9fc;
 }
 /* colors */
 .text-deepSapphire{
@@ -476,7 +498,8 @@ img{
     align-items: center;
     justify-content: center;
 }
-.aboutShortTittle {
+.aboutShortTittle,
+.eventShortTittle {
     display: inline-block;
     text-transform: capitalize;
 }
@@ -710,4 +733,62 @@ img{
 }
 /* -----------------
     Pilars Part End
+--------------------*/
+
+/* -----------------
+    Event Part Start
+--------------------*/
+.eventHeadingTittle{
+    text-transform: capitalize;
+}
+.eventItemImg {
+    position: relative;
+    float: left;
+}
+.eventItemImg img {
+    width: 270px;
+    height: 296px;
+}
+.eventItemText {
+    background: #fff;
+    box-shadow: 0px 5px 9.8px 0.2px rgb(85 85 85 / 7%);
+    padding: 34px 30px;
+    overflow: hidden;
+}
+.eventThumbText {
+    background: url(../image/Event/img-1.png) no-repeat center center / cover;
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 60px;
+    height: 85px;
+    text-align: center;
+    padding: 4px 8px 0 0;
+}
+.eventThumbText2{
+    background: url(../image/Event/img-2.png) no-repeat center center / cover;
+}
+.eventItemTextTittle {
+    font-family: 'Conv_Now-Bold';
+    text-transform: capitalize;
+    margin-top: 0;
+    display: inline-block;
+}
+.eventItemTextTiming {
+    align-items: center;
+}
+.eventItemTextTiming li {
+    font-size: 14px;
+    margin-right: 20px;
+}
+.eventItemTextTiming li i{
+    font-size: 15px;
+    margin-right: 10px;
+}
+.eventItemText a{
+    color: #0383c4;
+    text-transform: capitalize;
+}
+/* -----------------
+    Event Part End
 --------------------*/
