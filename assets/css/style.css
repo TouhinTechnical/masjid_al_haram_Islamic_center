@@ -94,8 +94,11 @@ ul{
 a{
     text-decoration: none;
 }
+.of-hidden{
+    overflow: hidden;
+}
 .fw-medium{
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 .fw-semiBold{
     font-weight: 600;
@@ -114,6 +117,9 @@ a{
 }
 .fs-30{
     font-size: 30px;
+}
+.fs-40{
+    font-size: 40px;
 }
 .fs-52{
     font-size: 52px;
@@ -137,8 +143,17 @@ img{
 .ml-8{
     margin-left: 8.33333333%;
 }
+.ml-9{
+    margin-left: 9px;
+}
+.mt-20{
+    margin-top: 20px;
+}
 .mt-30{
     margin-top: 30px;
+}
+.mt-40{
+    margin-top: 40px;
 }
 .mb-10{
     margin-bottom: 10px;
@@ -155,6 +170,9 @@ img{
 }
 .ptb-120{
     padding: 120px 0;
+}
+.pt-120{
+    padding-top: 120px;
 }
 .pb-70{
     padding-bottom: 70px;
@@ -558,4 +576,72 @@ img{
 }
 /* -----------------
     Prayer Part End
+--------------------*/
+
+/* -----------------
+    Service Part Start
+--------------------*/
+.serviceMainArea {
+    background: url(../image/Service/bg.png) no-repeat center center / cover;
+    padding: 200px 0;
+}
+.serviceShortTittle {
+    text-transform: capitalize;
+    padding: 8px 25px;
+    box-shadow: 0px 0px 9px 1px rgb(51 100 219 / 10%);
+    border-radius: 20px;
+    display: inline-block;
+}
+.serviceRoutineTable ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px 1px rgb(51 100 219 / 10%);
+}
+.serviceRoutineHead{
+    background: -moz-linear-gradient(173deg, rgb(255, 173, 111, .8) 0%, rgb(255, 125, 144) 100%);
+    background: -webkit-linear-gradient(173deg, rgb(255, 173, 111, .8) 0%, rgb(255, 125, 144) 100%);
+    background: -ms-linear-gradient(173deg, rgb(255, 173, 111, .8) 0%, rgb(255, 125, 144) 100%);
+}
+.serviceRoutineTable ul li{
+    padding: 15px;
+    flex-basis: 33.33%;
+}
+.serviceBtn{
+    box-shadow: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 16px 30px 14px 30px;
+}
+.serviceImgSection {
+    width: 537px;
+    position: relative;
+    right: -45px;
+    top: 80px;
+}
+.serviceImgSection2 {
+    position: relative;
+    left: -200px;
+    right: auto;
+    width: 130%;
+}
+.counterGrid {
+    float: left;
+    width: 31%;
+    text-align: center;
+    margin: 0 10px 10px 0;
+}
+.counterGrid h2{
+    font-family: 'Conv_Now-Bold';
+}
+.counterGrid p {
+    text-transform: capitalize;
+    text-align: center;
+}
+/* -----------------
+    Service Part End
 --------------------*/
