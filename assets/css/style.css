@@ -51,6 +51,9 @@ body{
     color: #525252;
     -webkit-font-smoothing: antialiased;
 }
+html{
+    scroll-behavior: smooth;
+}
 .container{
     width: 1170px;
     margin: 0 auto;
@@ -897,3 +900,66 @@ img{
 /* -----------------
     Blogs Part End
 --------------------*/
+
+/* --------------------
+    Newsletter Part Start
+----------------------*/
+.newsLetterArea {
+    position: relative;
+    z-index: 1;
+}
+.newsLetterArea::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #f9f9fc;
+    z-index: -1;
+}
+.newsLetterWrap {
+    max-width: 970px;
+    margin: auto;
+    background: #f9fdfe;
+    box-shadow: 0px 4px 9.5px 0.5px rgb(53 53 53 / 10%);
+    padding: 60px;
+}
+.newsLetterTittle {
+    font-family: 'Conv_Now-Bold';
+}
+.newsLetterForm form {
+    max-width: 425px;
+    margin: 0 auto;
+}
+.formItem {
+    position: relative;
+}
+.formControl{
+    width: 100%;
+    height: 55px;
+    border: 0;
+    outline: 0;
+    border-radius: 55px;
+    padding: 15px 15px 15px 25px;
+    font-size: 14px;
+    box-shadow: 0px 5px 15px 0 rgb(68 68 68 / 10%);
+}
+.formItem button {
+    font-family: 'Now';
+    font-size: 16px;
+    background: linear-gradient(left, #00a7d5, #00ded8);
+    background: -webkit-gradient(linear, left top, right top, from(#00a7d5), to(#00ded8));;
+    border: 0;
+    outline: 0;
+    width: 150px;
+    height: 45px;
+    border-radius: 45px;
+    line-height: 45px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+/* --------------------
+    Newsletter Part End
+----------------------*/

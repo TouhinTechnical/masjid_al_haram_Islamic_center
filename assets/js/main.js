@@ -1,4 +1,7 @@
 (function($){
+    /* ----------------
+        Animated circle
+     ------------------*/
     $(document).ready(function($) {
         function animateElements() {
             $('.supportProgessBar').each(function() {
