@@ -1,6 +1,7 @@
 /* -------------
     Fonts
 ----------------*/
+
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Rubik:ital,wght@0,300;0,400;0,700;1,500&display=swap');
 /* custom fonts */
@@ -137,6 +138,9 @@ a{
 .d-flex{
     display: flex;
 }
+.d-block{
+    display: block !important;
+}
 .lh-26{
     line-height: 26px;
 }
@@ -161,6 +165,9 @@ img{
 }
 .mt-20{
     margin-top: 20px;
+}
+.mt-25{
+    margin-top: 25px;
 }
 .mt-30{
     margin-top: 30px;
@@ -192,6 +199,9 @@ img{
 }
 .pt-120{
     padding-top: 120px;
+}
+.plr-15{
+    padding: 0 15px;
 }
 .pb-70{
     padding-bottom: 70px;
@@ -499,7 +509,9 @@ img{
     justify-content: center;
 }
 .aboutShortTittle,
-.eventShortTittle {
+.eventShortTittle,
+.supportShortTittle,
+.supportHeadingTittle {
     display: inline-block;
     text-transform: capitalize;
 }
@@ -646,7 +658,8 @@ img{
     padding: 15px;
     flex-basis: 33.33%;
 }
-.serviceBtn{
+.serviceBtn,
+.supportBtn{
     box-shadow: none;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -791,4 +804,51 @@ img{
 }
 /* -----------------
     Event Part End
+--------------------*/
+
+/* -----------------
+    Support Part Start
+--------------------*/
+.supportProgessBar,
+.supportProgessBar2,
+.supportProgessBar3{
+    display: inline-block;
+}
+.supportProgessBarCircle {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.supportProgessBarCircle::after {
+    content: "";
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.supportProgessBarCircle canvas {
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.supportProgessBarCircle div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -86px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #242f6c;
+}
+/* -----------------
+    Support Part End
 --------------------*/
