@@ -511,7 +511,8 @@ img{
 .aboutShortTittle,
 .eventShortTittle,
 .supportShortTittle,
-.supportHeadingTittle {
+.supportHeadingTittle,
+.blogsShortTittle {
     display: inline-block;
     text-transform: capitalize;
 }
@@ -751,7 +752,8 @@ img{
 /* -----------------
     Event Part Start
 --------------------*/
-.eventHeadingTittle{
+.eventHeadingTittle,
+.blogsHeadingTittle{
     text-transform: capitalize;
 }
 .eventItemImg {
@@ -851,4 +853,47 @@ img{
 }
 /* -----------------
     Support Part End
+--------------------*/
+
+/* -----------------
+    Blogs Part Start
+--------------------*/
+.blogsContent {
+    padding: 20px 27px 30px 30px;
+    box-shadow: 0px 5px 15px 0px rgb(68 68 68 / 4%);
+}
+.blogsImg,
+.blogsImg img {
+    width: 370px;
+    height: 300px;
+}
+.blogsPost-meta li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: -2px;
+}
+.blogsContent h3 a,
+.blogsPost-meta li{
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.blogsContent h3:hover a,
+.blogsPost-meta li:hover a{
+    color: #00b3d6;
+}
+.blogsPost-meta li:first-child{
+    padding: 0;
+}
+.blogsPost-meta {
+    align-items: center;
+}
+.blogsPost-meta li {
+    padding: 0 15px;
+}
+/* -----------------
+    Blogs Part End
 --------------------*/
