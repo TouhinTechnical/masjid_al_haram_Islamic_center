@@ -194,14 +194,23 @@ img{
     margin-bottom: 70px;
 }
 /* padding */
+.p-20{
+    padding: 20px 0;
+}
 .ptb-90{
     padding: 90px 0;
 }
 .ptb-120{
     padding: 120px 0;
 }
+.pt-10{
+    padding-top: 10px;
+}
 .pt-120{
     padding-top: 120px;
+}
+.pl-20{
+    padding-left: 20px;
 }
 .plr-15{
     padding: 0 15px;
@@ -959,7 +968,73 @@ img{
     position: absolute;
     top: 5px;
     right: 5px;
+    cursor: pointer;
 }
 /* --------------------
     Newsletter Part End
+----------------------*/
+
+/* --------------------
+    Footer Part Start
+----------------------*/
+.footerArea {
+    position: relative;
+    background: #fff;
+    font-size: 16px;
+    padding-top: 100px;
+}
+.topFooter {
+    padding-bottom: 100px;
+}
+.widget .logoArea {
+    max-width: 122px;
+}
+.widget ul li {
+    float: left;
+    font-size: 22px;
+    margin-right: 25px;
+}
+.widget ul li:last-child{
+    margin-right: 0;
+}
+.widgetTittle h3{
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+    line-height: 25px;
+}
+.linkWidget ul li {
+    text-transform: capitalize;
+    line-height: 21px;
+    padding-bottom: 10px;
+}
+.linkWidget ul li a{
+    color: #444;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.linkWidget ul li a:hover{
+    text-decoration: underline;
+}
+.contact-ft ul li {
+    line-height: 26px;
+    padding-bottom: 10px;
+    color: #444;
+}
+.contact-ft ul li i {
+    margin-right: 10px;
+}
+.buttomFooter .row{
+    border-top: 1px solid #e3eff0;
+}
+.copyright {
+    display: inline-block;
+    line-height: 26px;
+}
+/* --------------------
+    Footer Part End
 ----------------------*/
