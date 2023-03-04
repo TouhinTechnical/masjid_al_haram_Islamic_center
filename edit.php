@@ -1,3 +1,48 @@
+<?php
+    $server_name = "localhost";
+    $user_name = "root";
+    $password = "";
+    $database_name = "donate_db";
+    $connection = mysqli_connect($server_name,$user_name,$password,$database_name);
+
+    // database take data anlam
+    if($_GET['id']) {
+        $getid = $_GET['id'];
+        $sql_select = "SELECT * FROM donatelist WHERE id=$getid";
+        $query = mysqli_query($connection, $sql_select);
+        $data = mysqli_fetch_assoc($query);
+
+        $id             = $data['id'];
+        $amount        = $data['amount'];
+        $fullName      = $data['fullName'];
+        $email          = $data['email'];
+        $moblieNumber = $data['moblieNumber'];
+        $address       = $data['address'];
+        $message       = $data['message'];
+
+    }
+    // update method
+    if(isset($_POST['update'])){
+        $id             = $_POST['id'];
+        $amount        = $_POST['amount'];
+        $fullName      = $_POST['fullName'];
+        $email          = $_POST['email'];
+        $moblieNumber = $_POST['moblieNumber'];
+        $address       = $_POST['address'];
+        $message      = $_POST['message'];
+
+        $sql_update = "UPDATE donatelist SET amount='$amount', fullName='$fullName', email='$email', moblieNumber='$moblieNumber', address='$address', message='$message' WHERE id ='$id' ";
+
+        if(mysqli_query($connection, $sql_update) == TRUE) {
+            header('location:donateList.php');
+            echo "Data updated";
+        }else{
+           echo $sql_update. "Data not updated";
+        }
+    }
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -35,7 +80,7 @@
                                         <li><a href="index.html" class="text-deepSapphire">home</a></li>
                                         <li><a href="#about" class="text-deepSapphire">about</a></li>
                                         <li><a href="#service" class="text-deepSapphire">service</a></li>
-                                        <li><a href="donate.html" class="text-deepSapphire">donate</a></li>
+                                        <li><a href="donate.php" class="text-deepSapphire">donate</a></li>
                                         <li><a href="#event" class="text-deepSapphire">event</a></li>
                                         <li><a href="#blog" class="text-deepSapphire">blog</a></li>
                                     </ul>
@@ -81,33 +126,38 @@
                             <h2 class="donateHeaderTittle text-Astronaut fs-36 fw-bold mb-50 tAlign-center">make a donation form</h2>
                         </div> <!-- donateHeader -->
                         <div class="donationFromArea">
-                            <form action="#">
+                            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
                                 <div class="donationAmount">
                                     <h2 class="donateAmountTittle fs-18 fw-semiBold text-Astronaut mb-30 lh-20">your doantion</h2>
-                                    <input type="text" class="donationAmountInput" name="text" id="text" placeholder="Enter Donation Amount">
+                                    <input type="text" class="donationAmountInput" name="amount" id="text" placeholder="Enter Donation Amount" value="<?php echo  $amount ?>">
                                 </div> <!-- donationAmount -->
                                 <div class="donationDetails">
                                     <h2 class="donationDetailsTittle fs-18 fw-semiBold text-Astronaut mb-30 lh-20">details</h2>
                                     <div class="row d-flex f-wrap">
+                                        <div class="col-12 mb-15 plr-15">
+                                            <input type="text" name="id" value="<?php echo $id ?>" class="donationDetailsInput">
+                                        </div>
                                         <div class="col-6 mb-15 plr-15">
-                                            <input type="text" class="donationDetailsInput" name="name" id="fullname" placeholder="Full Name">
+                                            <input type="text" class="donationDetailsInput" name="fullName" id="fullName" placeholder="Full Name" value="<?php echo $fullName ?>">
                                         </div> <!-- col 6 -->
                                         <div class="col-6 mb-15 plr-15">
-                                            <input type="email" class="donationDetailsInput" name="email" id="email" placeholder="Enter your email">
+                                            <input type="email" class="donationDetailsInput" name="email" id="email" placeholder="Enter your email" value="<?php echo $email ?>">
                                         </div> <!-- col 6 -->
                                         <div class="col-6 mb-15 plr-15">
-                                            <input type="number" class="donationDetailsInput" name="number" id="Mnumber" placeholder="Enter valid Moblie Number">
+                                            <input type="text" class="donationDetailsInput" name="moblieNumber" id="moblieNumber" placeholder="Enter valid Moblie Number" value="<?php echo $moblieNumber ?>">
                                         </div> <!-- col 6 -->
                                         <div class="col-6 mb-15 plr-15">
-                                            <input type="text" class="donationDetailsInput" name="address" id="address" placeholder="Enter Your Address">
+                                            <input type="text" class="donationDetailsInput" name="address" id="address" placeholder="Enter Your Address" value="<?php echo $address ?>">
                                         </div> <!-- col 6 -->
                                         <div class="col-12 mb-15 plr-15">
-                                            <textarea name="note" id="note" cols="30" rows="10" class="donationDetailsInput h-135" placeholder="Message"></textarea>
+                                            <textarea name="message" id="message" cols="30" rows="10" class="donationDetailsInput h-135" placeholder="Message">
+                                                <?php echo $message ?>
+                                            </textarea>
                                         </div> <!-- col 12 -->
                                     </div> <!-- row -->
                                 </div> <!-- donationDetails -->
                                 <div class="submitArea tAlign-center">
-                                    <button type="submit" class="themeBtn submitBtn text-white">donate now</button>
+                                    <button type="submit" class="themeBtn submitBtn text-white" name="update">update</button>
                                 </div> <!-- submitArea -->
                             </form> <!-- form -->
                         </div> <!-- donationFromArea -->

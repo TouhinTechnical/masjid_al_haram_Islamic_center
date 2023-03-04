@@ -141,11 +141,21 @@ a{
 .d-flex{
     display: flex;
 }
+.alignItem-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
 .f-wrap{
     flex-wrap: wrap;
 }
 .d-block{
     display: block !important;
+}
+.d-hidden{
+    display: none !important;
+    visibility: hidden !important;
 }
 .lh-20{
     line-height: 20px;
@@ -175,8 +185,8 @@ img{
 .ml-9{
     margin-left: 9px;
 }
-.mr-15{
-    margin-right: 15px;
+.mr-5{
+    margin-right: 5px;
 }
 .mt-20{
     margin-top: 20px;
@@ -212,6 +222,9 @@ img{
 .p-20{
     padding: 20px 0;
 }
+.ptblr-15{
+    padding: 15px;
+}
 .ptb-90{
     padding: 90px 0;
 }
@@ -246,7 +259,16 @@ img{
 .bg-polar{
     background: #f5fbfd !important;
 }
+.bg-red{
+    background: #da3333 !important;
+}
+.bg-Varden{
+    background: #fff8dc;
+}
 /* colors */
+.text-lavender{
+    color: #e6e6fa;
+}
 .text-deepSapphire{
     color: #062265;
 }
@@ -1131,6 +1153,19 @@ img{
     padding: 13px 30px;
     font-family: 'Now';
     font-size: 16px;
+}
+/* Donation list css */
+.border{
+    border: 1px solid #029ca5;
+}
+.donationList span {
+	padding: 10px 15px;
+	background: purple;
+	border-radius: 10px;
+	color: lavender;
+	font-size: 20px;
+	cursor: pointer;
+	display: inline-block;
 }
 /* --------------------------
     Donation Page End
