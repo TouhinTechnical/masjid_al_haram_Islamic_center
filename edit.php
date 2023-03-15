@@ -57,17 +57,18 @@
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <!-- Custom Links -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
     <body>
         <!-- Header Part Start -->
-        <header>
+        <header class="menuFixed">
             <!-- Menu Area -->
             <div class="navAreaMain">
                 <div class="container">
                     <div class="row d-flex">
                         <div class="col-2">
                             <div class="logoArea">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img src="assets/image/Logo.png" alt="Fatih" class="logoImg">
                                     <span class="fs-30 fw-bold text-deepSapphire">Fatih</span>
                                 </a>
@@ -77,19 +78,16 @@
                             <nav class="navArea">
                                 <div class="navAreaMenu">
                                     <ul>
-                                        <li><a href="index.html" class="text-deepSapphire">home</a></li>
-                                        <li><a href="#about" class="text-deepSapphire">about</a></li>
-                                        <li><a href="#service" class="text-deepSapphire">service</a></li>
+                                        <li><a href="index.php" class="text-deepSapphire">home</a></li>
                                         <li><a href="donate.php" class="text-deepSapphire">donate</a></li>
-                                        <li><a href="#event" class="text-deepSapphire">event</a></li>
-                                        <li><a href="#blog" class="text-deepSapphire">blog</a></li>
+                                        <li><a href="donateList.php" class="text-deepSapphire">donate list</a></li>
                                     </ul>
                                 </div>
                             </nav> <!-- navArea -->
                         </div> <!-- col 8 -->
                         <div class="col-2">
                             <div class="navAreaBtn">
-                                <a href="#" class="themeBtn text-white">contact now</a>
+                                <a href="#contact" class="themeBtn text-white">contact now</a>
                             </div>
                         </div> <!-- col 2 -->
                     </div> <!-- Row -->
@@ -107,10 +105,16 @@
                             <h2 class="breadcumbWrapTittle fs-40 mb-10 text-Astronaut">donate now</h2>
                             <ul class="breadcumdNav">
                                 <li class="breadcumbNavFirst text-Astronaut">
-                                    <a href="index.html" class="text-Astronaut">Home</a>
+                                    <a href="index.php" class="text-Astronaut">Home</a>
+                                </li>
+                                <li class="breadcumbNavFirst text-Astronaut">
+                                    <a href="donate.php" class="text-Astronaut">Donate</a>
+                                </li>
+                                <li class="breadcumbNavFirst text-Astronaut">
+                                    <a href="donateList.php" class="text-Astronaut">Donate List</a>
                                 </li>
                                 <li>
-                                    <span class="text-Cerulean">Donate</span>
+                                    <span class="text-Cerulean">Donate List Edit From</span>
                                 </li>
                             </ul>
                         </div> <!-- breadcumbWrap -->
@@ -123,7 +127,7 @@
                 <div class="row">
                     <div class="col-8 ml-16 plr-15">
                         <div class="donateHeader">
-                            <h2 class="donateHeaderTittle text-Astronaut fs-36 fw-bold mb-50 tAlign-center">make a donation form</h2>
+                            <h2 class="donateHeaderTittle text-Astronaut fs-36 fw-bold mb-50 tAlign-center">make a donation edit form </h2>
                         </div> <!-- donateHeader -->
                         <div class="donationFromArea">
                             <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
@@ -168,14 +172,14 @@
         <!-- Donation Part End -->
 
         <!-- Footer Part Start -->
-        <section class="footerArea bg-polar">
+        <section class="footerArea bg-polar" id="contact">
             <div class="topFooter">
                 <div class="container">
                     <div class="row d-flex">
                         <div class="col-3 plr-15">
                             <div class="widget">
                                 <div class="logoArea mb-30">
-                                    <a href="index.html">
+                                    <a href="index.php">
                                         <img src="assets/image/Logo.png" alt="Fatih" class="logoImg">
                                         <span class="fs-30 fw-bold text-deepSapphire">Fatih</span>
                                     </a>

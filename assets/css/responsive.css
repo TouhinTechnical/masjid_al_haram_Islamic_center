@@ -1,0 +1,801 @@
+/* Laptop Device */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .container{
+        width: 950px;
+    }
+    .navAreaBtn {
+        margin-right: 28px;
+    }
+    .navAreaBtn .themeBtn {
+        padding: 12px 15px;
+    }
+    /* slider */
+    .sliderTextArea {
+        margin-top: 90px;
+    }
+    .sliderTextTittle{
+        font-size: 40px;
+        line-height: 58px;
+    }
+    .sliderImageArea {
+        right: 20px;
+        width: 390px;
+    }
+    .imgAnimatedBorder {
+        left: -25px;
+        top: -30px;
+        width: 415px;
+        height: 415px;
+    }
+    /* about */
+    .aboutTextSection {
+        margin-right: 30px;
+    }
+    .aboutHeadingTittle,
+    .serviceHeadingTittle,
+    .supportHeadingTittle {
+        font-size: 35px;
+    }
+    .aboutTextPara{
+        font-size: 15px;
+    }
+    /* service */
+    .serviceTextPara{
+        font-size: 18px;
+    }
+    .serviceRoutineTable {
+        font-size: 15px;
+    }
+    .serviceImgSection {
+        right: 20px;
+    }
+    .serviceImgSection2 {
+        left: -106px;
+    }
+    /* pilars */
+    .pilarsArea {
+        padding: 30px;
+    }
+    /* event */
+    .eventMainArea .row {
+        flex-direction: column;
+    }
+    .eventMainArea .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .eventItem {
+        margin-bottom: 40px;
+        padding: 0 30px;
+    }
+    .eventItemText {
+        padding: 64px 30px;
+    }
+    /* blogs */
+    .blogsArea .row {
+        flex-wrap: wrap;
+    }
+    .blogsArea .col-4{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .blogsImg, 
+    .blogsImg img {
+        width: 460px;
+        height: 350px;
+    }
+    .blogsContent h3{
+        font-size: 19px;
+    }
+    /* footer */
+    .widgetTittle h3 {
+        font-size: 20px;
+    }
+}
+/* Tablet Device */
+@media only screen and (min-width:768px) and (max-width: 991px){
+    .container{
+        width: 750px;
+    }
+    .logoArea {
+        margin-left: 10px;
+    }
+    .logoImg {
+        margin-right: 0;
+    }
+    .navAreaBtn .themeBtn {
+        padding: 12px 12px;
+        font-size: 14px;
+    }
+    /* slider */
+    .sliderMainArea {
+        padding: 0 50px;
+    }
+    .sliderMainArea .col-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .sliderTextTittle {
+        line-height: 58px;
+        font-size: 40px;
+    }
+    .sliderImageArea {
+        display: none;
+    }
+    /* about */
+    .aboutArea .row {
+        flex-direction: column;
+    }
+    .aboutArea .col-6,
+    .serviceMainArea .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .aboutTextSection,
+    .serviceAreaTop {
+        padding: 0 22px 0 30px;
+        margin-top: 40px;
+    }
+    /* Prayer */
+    .timerTextShortTittle {
+        font-size: 41px;
+        line-height: 46px;
+    }
+    /* service */
+    .serviceMainArea .row {
+        flex-direction: column-reverse;
+    }
+    .serviceImgSection {
+        top: 0;
+        margin-bottom: 40px;
+    }
+    .serviceImgSection2 {
+        left: 0;
+        width: 100%;
+    }
+    /* pilar */
+    .pilarsArea {
+        padding: 80px 40px;
+    }
+    .pilarsAreaContentGrid {
+        width: 50%;
+    }
+    /* event */
+    .eventMainArea .row {
+        flex-direction: column;
+    }
+    .eventMainArea .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .eventItem {
+        margin-bottom: 40px;
+        padding: 0 30px 0 30px;
+    }
+    .eventItemText {
+        padding: 49px 30px;
+    }
+    /* support */
+    .supportArea {
+        padding: 0 25px 0 35px;
+    }
+    .supportArea .topRow{
+        flex-direction: column;
+    }
+    .supportArea .col-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .supportText {
+        margin-top: 40px;
+    }
+    .supportProgessArea .col-4 {
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    /* blogs */
+    .blogsArea .row {
+        flex-wrap: wrap;
+    }
+    .blogsArea .col-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .blogsItem {
+        padding: 0 145px;
+    }
+    .blogsImg, 
+    .blogsImg img {
+        width: 460px;
+        height: 350px;
+    }
+    .blogsContent {
+        width: 460px;
+    }
+    .blogsContent h3{
+        font-size: 19px;
+    }
+    /* newsletter */
+    .newsLetterWrap {
+        max-width: 650px;
+    }
+    /* footer */
+    .topFooter {
+        padding: 0 100px 100px 100px;
+    }
+    .topFooter .row{
+        flex-wrap: wrap;
+    }
+    .topFooter .col-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .linkWidget,
+    .contactWidget {
+        margin-top: 20px;
+    }
+    .donationList td {
+        padding: 0;
+    }
+}
+/* Medium Device */
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .container{
+        width: 450px;
+    }
+    .navAreaMain .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navAreaBtn{
+        display: none;
+    }
+    .navAreaMain {
+        height: 80px;
+        padding: 25px 0;
+    }
+    .logoArea {
+        width: 100px;
+    }
+    .logoImg {
+        width: 25px;
+        height: 25px;
+        margin-right: -4px;
+    }
+    /* moblie menu */
+    .navAreaMenu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background: #fff;
+        border-left: 1px solid #ccc;
+        transform: translateX(280px);
+        transition: transform 250ms ease-in-out;
+        -webkit-transition: transform 250ms ease-in-out;
+        -moz-transition: transform 250ms ease-in-out;
+        -ms-transition: transform 250ms ease-in-out;
+        -o-transition: transform 250ms ease-in-out;
+    }
+    .navAreaMenu ul {
+        display: inline-block;
+    }
+    .navAreaMenu ul li{
+        border-bottom: 1px solid #ccc;
+        width: 280px;
+    }
+    .navAreaMenu ul li a {
+        padding: 10px 15px 10px 35px;
+        color: #333;
+        font-weight: 600;
+    }
+    .sidebarIconToggle{
+        display: block;
+    }
+    /* slider */
+    .sliderMainArea {
+        height: 650px;
+        padding: 0 30px;
+    }
+    .sliderMainArea .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .sliderMainArea .col-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .sliderTextTittle {
+        line-height: 50px;
+        font-size: 30px;
+    }
+    .sliderImageArea {
+        display: none;
+    }
+    /* about */
+    .aboutMainArea {
+        padding: 50px 0;
+    }
+    .aboutArea .row {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .aboutArea .col-6,
+    .serviceMainArea .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .aboutTextSection {
+        padding: 0 22px 0 30px;
+        margin-top: 40px;
+    }
+    .aboutHeadingTittle {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .aboutBtn {
+        flex-wrap: wrap;
+    }
+    .aboutBtn .themeBtn {
+        margin-bottom: 40px;
+    }
+    .videoHolder {
+        margin: 0 25px 0 0;
+    }
+    /* Prater */
+    .prayerTimerSection .row {
+        flex-direction: column;
+    }
+    .prayerTimerSection .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .prayerTimerSection {
+        padding: 50px;
+    }
+    .timerText {
+        margin-bottom: 40px;
+    }
+    .prayerTimerSection .ml-8{
+        margin-left: 0;
+    }
+    .prayerTimerList ul li:nth-child(1),
+    .prayerTimerList ul li:nth-child(3),
+    .prayerTimerList ul li:nth-child(5){
+        right: 0;
+    }
+    /* service */
+    .serviceMainArea .row {
+        flex-direction: column-reverse;
+    }
+    .serviceImgSection {
+        top: 0;
+        margin-bottom: 40px;
+        right: 0;
+        width: 100%;
+    }
+    .serviceImgSection2 {
+        left: 0;
+        width: 100%;
+    }
+    .serviceHeadingTittle{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .serviceRoutineTable {
+        font-size: 14px;
+    }
+    /* pilar */
+    .pilarsArea {
+        padding: 80px 20px;
+    }
+    .pilarsAreaContentGrid {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    /* event */
+    .eventMainArea .row {
+        flex-direction: column;
+    }
+    .eventMainArea .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .eventHeadingTittle{
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .eventItem {
+        margin-bottom: 40px;
+        padding: 0 30px 0 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .eventItemImg img {
+        width: 420px;
+        height: 100%;
+    }
+    .eventItemText {
+        padding: 30px 30px;
+    }
+    /* support */
+    .supportArea {
+        padding: 120px 15px 120px 15px;
+        text-align: center;
+    }
+    .supportArea .topRow{
+        flex-direction: column;
+    }
+    .supportArea .col-5,
+    .supportArea .col-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .supportProgessArea .row{
+        flex-wrap: wrap;
+    }
+    .supportProgessArea .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .supportProgessWrap{
+        text-align: center;
+    }
+    /* blogs */
+    .blogsArea .row {
+        flex-wrap: wrap;
+    }
+    .blogsArea .col-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .blogsItem {
+        padding: 0;
+    }
+    .blogsImg, 
+    .blogsImg img {
+        width: 450px;
+        height: 350px;
+    }
+    .blogsContent {
+        width: 450px;
+    }
+    .blogsContent h3{
+        font-size: 19px;
+    }
+    /* footer */
+    .topFooter {
+        padding: 0 50px 50px 50px;
+    }
+    .topFooter .row{
+        flex-wrap: wrap;
+    }
+    .topFooter .col-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .topFooter .col-2 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .linkWidget,
+    .contactWidget {
+        margin-top: 20px;
+    }
+    .widgetTittle h3 {
+        margin: 10px 0 0 0;
+    }
+    .linkWidget{
+        padding-left: 0;
+    }
+}
+/* Moblie Device */
+@media screen and (min-width: 320px) and (max-width: 479px){
+    .container{
+        width: 350px;
+    }
+    .navAreaMain .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navAreaBtn{
+        display: none;
+    }
+    .navAreaMain {
+        height: 80px;
+        padding: 25px 15px 25px 15px;
+    }
+    .logoArea {
+        width: 100px;
+    }
+    .logoImg {
+        width: 25px;
+        height: 25px;
+        margin-right: -4px;
+    }
+    /* moblie menu */
+    .navAreaMenu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        background: #fff;
+        border-left: 1px solid #ccc;
+        transform: translateX(280px);
+        transition: transform 250ms ease-in-out;
+        -webkit-transition: transform 250ms ease-in-out;
+        -moz-transition: transform 250ms ease-in-out;
+        -ms-transition: transform 250ms ease-in-out;
+        -o-transition: transform 250ms ease-in-out;
+    }
+    .navAreaMenu ul {
+        display: inline-block;
+    }
+    .navAreaMenu ul li{
+        border-bottom: 1px solid #ccc;
+        width: 280px;
+    }
+    .navAreaMenu ul li a {
+        padding: 10px 15px 10px 35px;
+        color: #333;
+        font-weight: 600;
+    }
+    .sidebarIconToggle{
+        display: block;
+    }
+    /* slider */
+    .sliderMainArea {
+        height: 650px;
+        padding: 0 20px;
+    }
+    .sliderMainArea .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .sliderMainArea .col-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .sliderTextTittle {
+        line-height: 35px;
+        font-size: 20px;
+    }
+    .sliderImageArea {
+        display: none;
+    }
+    /* about */
+    .aboutMainArea {
+        padding: 50px 0;
+    }
+    .aboutArea .row {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .aboutArea .col-6,
+    .serviceMainArea .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .aboutArea.pb-70 {
+        padding: 0 38px 0 8px;
+    }
+    .aboutTextSection {
+        margin: 40px 0;
+    }
+    .aboutHeadingTittle {
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .aboutBtn {
+        flex-wrap: wrap;
+    }
+    .aboutBtn .themeBtn {
+        margin-bottom: 40px;
+    }
+    .videoHolder {
+        margin: 0 25px 0 0;
+    }
+    /* Prater */
+    .prayerTimerSection .row {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .prayerTimerSection .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .prayerTimerSection {
+        padding: 50px 50px 50px 15px;
+    }
+    .timerTextShortTittle {
+        font-size: 44px;
+    }
+    .timerText {
+        margin-bottom: 40px;
+    }
+    .prayerTimerSection .ml-8{
+        margin-left: 0;
+    }
+    .prayerTimerList ul li:nth-child(1),
+    .prayerTimerList ul li:nth-child(3),
+    .prayerTimerList ul li:nth-child(5){
+        right: 0;
+    }
+    /* service */
+    .serviceMainArea .row {
+        flex-direction: column-reverse;
+    }
+    .serviceMainArea {
+        padding: 200px 0 70px 0;
+    }
+    .serviceAreaTop, .serviceAreaBottom {
+        padding: 0 38px 0 8px;
+        margin: 0 0 40px 0;
+    }
+    .serviceImgSection {
+        top: 0;
+        margin-bottom: 40px;
+        right: 0;
+        width: 100%;
+    }
+    .serviceImgSection2 {
+        left: 0;
+        width: 100%;
+    }
+    .serviceHeadingTittle {
+        font-size: 23px;
+        line-height: 40px;
+    }
+    .serviceRoutineTable {
+        font-size: 14px;
+    }
+    .counterGrid {
+        margin: 0 40px 40px 0;
+        font-size: 14px;
+    }
+    .counterGrid p{
+        font-size: 14px;
+    }
+    /* pilar */
+    .pilarsArea {
+        padding: 80px 15px 80px 15px;
+        margin: 0 15px 0 -30px;
+    }
+    .pilarsAreaContentGrid {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    /* event */
+    .eventMainArea .row {
+        flex-direction: column;
+    }
+    .eventMainArea .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .eventTittleSection {
+        padding: 0 60px 0 30px;
+    }
+    .eventHeadingTittle {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .eventItem {
+        margin-bottom: 40px;
+        padding: 0px 60px 0 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .eventItemImg img {
+        width: 420px;
+        height: 100%;
+    }
+    .eventItemText {
+        padding: 30px 30px;
+    }
+    .eventItemTextTiming li {
+        margin-right: 8px;
+    }
+    .eventItemTextTittle {
+        font-size: 18px;
+    }
+    /* support */
+    .supportArea {
+        padding: 120px 0 120px 0;
+        text-align: center;
+    }
+    .supportArea .topRow{
+        flex-direction: column;
+    }
+    .supportArea .col-5,
+    .supportArea .col-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .supportText,
+    .supportProgessArea {
+        padding: 0 40px 0 10px;
+    }
+    .supportHeadingTittle {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .supportProgessArea .row{
+        flex-wrap: wrap;
+    }
+    .supportProgessArea .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .supportProgessWrap{
+        text-align: center;
+    }
+    /* blogs */
+    .blogsArea .row {
+        flex-wrap: wrap;
+    }
+    .blogsArea .col-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .blogsTittleSection {
+        padding: 0 60px 0 30px;
+    }
+    .blogsItem {
+        padding: 0 60px 0 30px;
+    }
+    .blogsImg, 
+    .blogsImg img {
+        width: 290px;
+        height: 295px;
+    }
+    .blogsContent {
+        width: 290px;
+        padding: 20px 10px 30px 10px;
+    }
+    .blogsContent h3{
+        font-size: 19px;
+    }
+    .blogsPost-meta {
+        font-size: 12px;
+    }
+    /* footer */
+    .topFooter {
+        padding: 0 30px;
+    }
+    .topFooter .row{
+        flex-wrap: wrap;
+    }
+    .topFooter .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .topFooter .col-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .widget,
+    .contactWidget {
+        padding: 0 85px 0 0px;
+    }
+    .linkWidget,
+    .contactWidget {
+        margin-top: 20px;
+    }
+    .widgetTittle h3 {
+        margin: 10px 0 0 0;
+    }
+    .linkWidget{
+        padding-left: 0;
+    }
+    .buttomFooter .row {
+        padding: 20px 50px 20px 20px;
+    }
+}

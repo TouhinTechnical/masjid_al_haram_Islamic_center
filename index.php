@@ -12,17 +12,18 @@
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <!-- Custom Links -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
     <body>
         <!-- Header Part Start -->
-        <header>
+        <header class="menuFixed">
             <!-- Menu Area -->
             <div class="navAreaMain">
                 <div class="container">
                     <div class="row d-flex">
                         <div class="col-2">
                             <div class="logoArea">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img src="assets/image/Logo.png" alt="Fatih" class="logoImg">
                                     <span class="fs-30 fw-bold text-deepSapphire">Fatih</span>
                                 </a>
@@ -30,9 +31,22 @@
                         </div> <!-- col 2 -->
                         <div class="col-8">
                             <nav class="navArea">
-                                <div class="navAreaMenu">
+                                <!-- moblie menu toggle -->
+                                <input type="checkbox" name="toggle" id="openSidebarMenu">
+                                <label for="openSidebarMenu" class="sidebarIconToggle">
+                                    <div class="spinner top"></div>
+                                    <div class="spinner middle"></div>
+                                    <div class="spinner bottom"></div>
+                                </label>
+                                <label for="openSidebarMenu" class="sidebarIconCloseToggle">
+                                    <div class="spinner top"></div>
+                                    <div class="spinner middle"></div>
+                                    <div class="spinner bottom"></div>
+                                </label>
+                                <!-- moblie menu toggle end -->
+                                <div class="navAreaMenu" id="sidebarMenu">
                                     <ul>
-                                        <li><a href="index.html" class="text-deepSapphire">home</a></li>
+                                        <li><a href="index.php" class="text-deepSapphire">home</a></li>
                                         <li><a href="#about" class="text-deepSapphire">about</a></li>
                                         <li><a href="#service" class="text-deepSapphire">service</a></li>
                                         <li><a href="donate.php" class="text-deepSapphire">donate</a></li>
@@ -44,7 +58,7 @@
                         </div> <!-- col 8 -->
                         <div class="col-2">
                             <div class="navAreaBtn">
-                                <a href="#" class="themeBtn text-white">contact now</a>
+                                <a href="#contact" class="themeBtn text-white">contact now</a>
                             </div>
                         </div> <!-- col 2 -->
                     </div> <!-- Row -->
@@ -393,13 +407,13 @@
             <!-- Support us Part Start -->
             <section class="supportArea ptb-120">
                 <div class="container">
-                    <div class="row d-flex">
+                    <div class="row d-flex topRow">
                         <div class="col-5 plr-15">
                             <div class="supportText">
                                 <span class="supportShortTittle fs-18 fw-semiBold text-Cerulean mb-10 lh-26">support us</span>
                                 <h2 class="supportHeadingTittle d-block headingTittle mt-20 mb-20">we need your help</h2>
                                 <p class="supportTextPara fs-19 lh-35 text-Boulder mb-30">The Weekend School of the Islamic Center of Allah is committed to providing quality Islamic Education according to the Quran.</p>
-                                <a href="#" class="supportBtn themeBtn text-white">donate now</a>
+                                <a href="donate.php" class="supportBtn themeBtn text-white">donate now</a>
                             </div> <!-- supportText -->
                         </div> <!-- col-5 -->
                         <div class="col-7 plr-15">
@@ -534,7 +548,7 @@
         </main>
 
         <!-- Footer Area Start -->
-        <footer class="footerMain">
+        <footer class="footerMain" id="contact">
             <section class="newsLetterArea tAlign-center">
                 <div class="container">
                     <div class="newsLetterWrap">
@@ -564,7 +578,7 @@
                             <div class="col-3 plr-15">
                                 <div class="widget">
                                     <div class="logoArea mb-30">
-                                        <a href="index.html">
+                                        <a href="index.php">
                                             <img src="assets/image/Logo.png" alt="Fatih" class="logoImg">
                                             <span class="fs-30 fw-bold text-deepSapphire">Fatih</span>
                                         </a>

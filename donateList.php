@@ -31,17 +31,18 @@
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <!-- Custom Links -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
     <body>
         <!-- Header Part Start -->
-        <header>
+        <header class="menuFixed">
             <!-- Menu Area -->
             <div class="navAreaMain">
                 <div class="container">
                     <div class="row d-flex">
                         <div class="col-2">
                             <div class="logoArea">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img src="assets/image/Logo.png" alt="Fatih" class="logoImg">
                                     <span class="fs-30 fw-bold text-deepSapphire">Fatih</span>
                                 </a>
@@ -51,12 +52,9 @@
                             <nav class="navArea">
                                 <div class="navAreaMenu">
                                     <ul>
-                                        <li><a href="index.html" class="text-deepSapphire">home</a></li>
-                                        <li><a href="#about" class="text-deepSapphire">about</a></li>
-                                        <li><a href="#service" class="text-deepSapphire">service</a></li>
+                                        <li><a href="index.php" class="text-deepSapphire">home</a></li>
                                         <li><a href="donate.php" class="text-deepSapphire">donate</a></li>
-                                        <li><a href="#event" class="text-deepSapphire">event</a></li>
-                                        <li><a href="#blog" class="text-deepSapphire">blog</a></li>
+                                        <li><a href="donateList.php" class="text-deepSapphire">donate list</a></li>
                                     </ul>
                                 </div>
                             </nav> <!-- navArea -->
@@ -81,7 +79,7 @@
                             <h2 class="breadcumbWrapTittle fs-40 mb-10 text-Astronaut">donate list</h2>
                             <ul class="breadcumdNav">
                                 <li class="breadcumbNavFirst text-Astronaut">
-                                    <a href="index.html" class="text-Astronaut">Home</a>
+                                    <a href="index.php" class="text-Astronaut">Home</a>
                                 </li>
                                 <li class="breadcumbNavFirst text-Astronaut">
                                     <a href="donate.php" class="text-Astronaut">Donate</a>
@@ -95,6 +93,33 @@
                 </div> <!-- row -->
             </div> <!-- container -->
         </section> <!-- donateBreadCumbArea -->
+
+        <!-- Model Start -->
+        <div class="modal_bg">
+            <div class="modal">
+                <h2>bkash payment</h2>
+                <p>আপনাকে বিকাশ থেকে নিচের নাম্বারে সেন্ড মানি করতে হবে</p>
+                <p>bkash number : <span>018XXXXXXXX</span></p>
+                <form action="#">
+                    <label for="#">your bkash Account Number</label> <br>
+                    <input type="text" name="BkashNumber" id="BkashNumber" placeholder="আপনার বিকাশ নাম্বার দিন..."> <br>
+                    <label for="#">bKash Transaction ID</label> <br>
+                    <input type="text" name="BkashTxId" id="BkashTxId" placeholder="9ID285KCDY"> <br>
+                    <button type="submit" class="themeBtn modalBtnCheck text-white mt-30">Payment</button>
+                </form>
+                <span class="modal_close">X</span>
+            </div>
+        </div>
+        <div class="modal_bg modal_bg_cash">
+            <div class="modal">
+                <h2>Cash On Payment</h2>
+                <p>Contact number : <span>018XXXXXXXX</span></p>
+                <button type="submit" class="themeBtn modalBtnCheck text-white mt-30">Call Me</button>
+                <span class="modal_close_cash">X</span>
+            </div>
+        </div>
+        <!-- Model End -->
+
         <!-- Dynamic Part Donation List -->
         <section class="donationList d-flex alignItem-center justify-center ptb-90 bg-Varden">
             <?php
@@ -123,7 +148,8 @@
                     $address = $data['address'];
                     $message = $data['message'];
                     echo 
-                        "<tr>
+                        "
+                        <tr>
                             <td class='ptblr-15 bg-Whisper'>$id</td>
                             <td class='ptblr-15 bg-Whisper'>$fullName</td>
                             <td class='ptblr-15 bg-Whisper'>$email</td>
@@ -145,12 +171,12 @@
                             </td>
                             <td class='ptblr-15 bg-Whisper'>
                                 <span class='mr-5'>
-                                    <a href='#' class='text-lavender'>
-                                    <i class='fa fa-paypal'></i>
+                                    <a href='#' class='text-lavender' id='paymentBtn'>
+                                        <i class='fa fa-paypal'></i>
                                     </a>
                                 </span>
                                 <span class='bg-red'>
-                                    <a href='#' class='text-lavender'>
+                                    <a href='#' class='text-lavender' id='cashBtn'>
                                         Cash
                                     </a>
                                 </span>
@@ -160,5 +186,7 @@
             ?>
         </section>
         <!-- Donation Part End -->
+
+        <script src="assets/js/model.js"></script>
     </body>
 </html>

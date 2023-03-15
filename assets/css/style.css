@@ -47,6 +47,7 @@ body{
     background: #fff;
     color: #525252;
     -webkit-font-smoothing: antialiased;
+    /* overflow-x: hidden; */
 }
 html{
     scroll-behavior: smooth;
@@ -340,6 +341,13 @@ img{
     color: #242f6c;
     line-height: 60px;
 }
+.menuFixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #fff;
+}
 /* -----------------
     Header Part Start
 --------------------*/
@@ -374,6 +382,77 @@ img{
 }
 .navAreaMenu ul li:hover a{
     color: #029ca5;
+}
+/* moblie menu */
+#openSidebarMenu {
+	display: none;
+}
+#openSidebarMenu:checked ~ .navAreaMenu {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+.sidebarIconToggle,
+.sidebarIconCloseToggle {
+	position: absolute;
+	top: 25px;
+	right: 15px;
+	cursor: pointer;
+	z-index: 20;
+	background: -webkit-gradient(linear, left top, right top, from(#00a7d5), to(#00ded8));
+	background: linear-gradient(left, #00a7d5, #00ded8);
+	width: 40px;
+	height: 35px;
+	border-radius: 5px;
+	padding: 9px 10px;
+    display: none;
+}
+.sidebarIconCloseToggle{
+    right: 260px;
+}
+#openSidebarMenu:checked ~ .sidebarIconCloseToggle {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	padding: 10px;
+}
+#openSidebarMenu:checked ~ .sidebarIconToggle{
+    display: none;
+}
+.spinner{
+    height: 3px;
+    background: #fff;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.spinner.middle,
+.spinner.bottom{
+    margin-top: 3px;
+}
+#openSidebarMenu:checked ~ .sidebarIconCloseToggle > .spinner.middle{
+    opacity: 0;
+}
+#openSidebarMenu:checked ~ .sidebarIconCloseToggle > .spinner.top{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    margin-top: 8px;
+}
+#openSidebarMenu:checked ~ .sidebarIconCloseToggle > .spinner.bottom{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    margin-top: -9px;
 }
 /* -----------------
     Header Part End
@@ -1166,6 +1245,78 @@ img{
 	font-size: 20px;
 	cursor: pointer;
 	display: inline-block;
+}
+/* Modal design */
+.modal-active,
+.modal-active-cash{
+    visibility: visible !important;
+}
+.modal_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 30%;
+    left: 0;
+    z-index: 9999;
+    visibility: hidden;
+}
+.modal_bg_cash{
+    top: 50%;
+}
+.modal {
+    background: cadetblue;
+    text-align: center;
+    padding: 45px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+.modal h2 {
+    text-transform: capitalize;
+    color: yellowgreen;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.modal p {
+    font-size: 14px;
+    line-height: 21px;
+    color: honeydew;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.modal span {
+    color: #008000;
+}
+.modal form label {
+    font-size: 14px;
+    line-height: 21px;
+    color: honeydew;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.modal form input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+.modal_close,
+.modal_close_cash {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: aliceblue !important;
+    font-size: 18px;
+    cursor: pointer;
+}
+.modalBtnCheck {
+    box-shadow: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 /* --------------------------
     Donation Page End
